@@ -9,14 +9,11 @@ import com.bumptech.glide.request.RequestOptions
 
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var elon:ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        elon=findViewById(R.id.elon)
+        setContentView(R.layout.dressview)
 
 
-        Glide.with(this).load(R.drawable.elon_musk).apply(RequestOptions.circleCropTransform()).into(elon)
 
     }
 }
